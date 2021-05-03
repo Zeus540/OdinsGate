@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import '../src/scss/index.scss';
+import HomeSection from '../src/pages/HomeSection';
+import AboutUsSection from '../src/pages/AboutUsSection';
+import ServicesSection from '../src/pages/ServicesSection';
+import ClientSection from '../src/pages/ClientSection';
+import ContactSection from '../src/pages/ContactSection';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <HomeSection 
+    headingw1 = "LET'S" 
+    headingw2 = "GROW" 
+    headingw3 = "YOUR" 
+    headingw4 = "BRAND" 
+    tagline1="THE WORLD IS CHANGING......" 
+    tagline2= "DONT BE LEFT BEHIND"
+    />
+    <AboutUsSection/> 
+    <ServicesSection/>
+    <ClientSection/>
+    <ContactSection/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
